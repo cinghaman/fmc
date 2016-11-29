@@ -8599,282 +8599,72 @@ nav .form-control
     display: inline;
 }
 
-/*
-.content-box {
-    line-height: 1.75;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, .03) 0 2px 0;
-    border-radius: 4px;
-    margin-bottom: 2em;
-    padding: 26px;
+.job-manager-pagination
+{
+    clear: both;
 }
 
-.home-widget-title {
-    font-size: 30px;
-    line-height: normal;
-}
-
-.home-widget {
-    margin: 8em 0;
-}
-
-.home-widget-section-title {
-    margin: 4em 0;
-}
-
-.home-widget-description {
-    font-size: 16px;
-    line-height: normal;
-}
-.attachment-clickbox, .image-grid-clickbox, .job_listing-clickbox, .product-clickbox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-}
-.type-job_listing.style-grid.job_position_featured .job_listing-entry-header:before {
-    z-index: 10;
-    content: ' ';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.has-image.entry-cover--home:after, .has-image.entry-cover:after, .has-image.listing-cover:after, .has-image.page-cover:after, .listify-cover.has-image:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,.45);
-    z-index: 5;
-}
-
-.has-image.entry-cover--home:after, .has-image.entry-cover:after, .has-image.listing-cover:after, .has-image.page-cover:after, .listify-cover.has-image:after {
-    overflow: hidden;
-}
-
- .facetwp-type-slider .noUi-connect, .ui-slider .ui-slider-range, .listing-owner, .comment-rating, .job_listing-rating-average, .map-marker.active:after, .cluster, .widget_calendar tbody a, .load_more_jobs, .listify-badge, .listing-featured-badge {
-    background-color: #2854a1;
-}
-li.type-job_listing .job_listing-rating-stars span, .rating-stars span, .widget .comment-form-rating a.star {
-    color: #ffb400;
-}
-.job_listing-entry-footer .star-icon {
-    font-size: 17px;
-    margin-top: 1px;
+.job-manager-pagination a
+{
     display: inline-block;
 }
 
-.job_listing-rating-stars .star-icon {
-    margin-right: 5px;
-    position: relative;
-}
-.job_listing-rating-wrapper, .job_listing-rating-wrapper>span {
-    display: inline-block;
-}
-.job_listing-rating-stars {
-    line-height: normal;
-}
-
-.job_listing-entry-footer .job-manager-form.wp-job-manager-bookmarks-form, .job_listing-entry-footer .job_listing-rating-wrapper {
-    position: relative;
-    z-index: 25;
-    line-height: normal;
-}
-
-.job_listing-rating-wrapper, .job_listing-rating-wrapper>span {
-    display: inline-block;
-}
-.job_listing-entry-footer .job_listing-rating-average, .job_listing-entry-footer .job_listing-rating-count {
-    display: none;
-}
-.job_listing-entry-footer .job_listing-rating-average {
-    margin: 0 0 0 5px;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-}
-.listing-entry-company-image--card {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    width: 60px;
-    z-index: 19;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.listing-entry-company-image--card .listing-entry-company-image__img {
-    border-color: #ffffff;
-}
-.listify-badge, .listing-featured-badge, .listing-owner {
-    color: #fff;
-    font-size: 10px;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    text-shadow: none;
-    line-height: normal;
-    padding: 3px 10px;
-    border-radius: 3px;
-    margin: -1px 0 1em;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-li.type-job_listing.style-grid .wp-job-manager-bookmarks-form {
-    top: 15px;
-    right: 20px;
-}
-
-li.type-job_listing .wp-job-manager-bookmarks-form {
-    position: absolute;
-    z-index: 30;
-}
-
-.wp-job-manager-bookmarks-form, .wp-job-manager-bookmarks-form>div:first-child {
-    display: inline-block;
+.job-manager-pagination ul
+{
     margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.job-manager-pagination ul li
+{
+    display: inline-block;
+}
+
+.job-manager-pagination ul li a
+{
+    padding: 6px 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
     border: 0;
-}
-li.type-job_listing.style-grid .wp-job-manager-bookmarks-form .bookmark-action {
-    background: rgba(0,0,0,.5);
-    border-radius: 50px;
-    padding: 3px 12px 1px;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
 }
 
-@media (min-width: 768px) {
-	.type-job_listing.style-grid .job_listing-entry-header {
-		height: 220px;
-		padding: 0;
-	}
-}
-.type-job_listing.style-grid .job_listing-entry-header {
-    padding: 3.5em 2em 2em;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    overflow: hidden;
-    height: auto;
-}
-
-.has-image.entry-cover, .has-image.entry-cover a, .has-image.entry-cover--home, .has-image.entry-cover--home a, .has-image.listing-cover, .has-image.listing-cover a, .has-image.page-cover, .has-image.page-cover a, .listify-cover.has-image, .listify-cover.has-image a {
-    color: #fff;
-    text-shadow: rgba(0,0,0,.8) 0 1px 0;
-}
-
-.listing-cover, .entry-cover, .homepage-cover.page-cover, .list-cover {
-    background-color: #f5f5f5;
-}
-
-@media (min-width: 992px) {
-	.listing-cover {
-		padding: 16em 0 5em;
-	}
-}
-
-@media (min-width: 768px) {
-	.listing-cover {
-		padding: 8em 0 3em;
-	}
-}
-
-.entry-cover, .entry-cover--home, .listify-cover, .listing-cover, .page-cover {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.type-job_listing.style-grid .job_listing-entry-footer {
-    padding: 1em 2em;
-}
-
-.job_listing-entry-footer {
-    position: relative;
-}
-
-@media (min-width: 768px) {
-	.type-job_listing.style-grid .job_listing-entry-header-wrapper {
-		position: absolute;
-		left: 2em;
-		right: 2em;
-		bottom: 2em;
-	}
-}
-
-.cover-wrapper {
-    position: relative;
-    z-index: 10;
-}
-
-.type-job_listing.style-grid .job_listing-entry-thumbnail, .type-job_listing.style-grid .wp-post-image {
-    display: none;
-}
-
-.type-job_listing.style-grid .job_listing-entry-meta {
-    margin-right: 2em;
+.job-manager-pagination ul li > *
+{
     max-width: 100%;
+    margin-right: 8px;
+    padding: 11px 15px;
+    padding: 11px 15px;
+
+    border: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    background-image: none;
+    box-shadow: rgba(0, 0, 0, .05) 0 2px 0;
+    box-shadow: none;
+
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-appearance: none;
 }
 
-.list-cover {
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-}
+.job-manager-pagination ul li span
+{
+    padding: 6px 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
-li.type-job_listing .claimed-ribbon, li.type-job_listing .claimed-ribbon:hover .tooltip {
-    display: none;
+    border: 0;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
 }
-
-.claimed-ribbon {
-    font-size: 0;
-    display: inline-block;
-    height: 38px;
-    position: relative;
-    vertical-align: middle;
-}
-
-.job_listing-entry-header .job_listing-title {
-    font-size: 20px;
-    margin: 0 0 .5em;
-}
-
-@media screen and (min-width: 992px) {
-	.page-title, .job_listing-title, .popup-title, .homepage-cover .home-widget-title {
-		font-size: 32px;
-		line-height: normal;
-	}
-}
-
-.type-job_listing .job_listing-entry-header .job_listing-location {
-    margin-top: .5em;
-    margin-bottom: 0;
-    max-width: 100%;
-    display: block;
-}
-
-.category-list li a, .ellipseit, .filter_by_tag a, .job_types li, .listify_widget_panel_listing_tags a, .listings-by-term-content, .type-job_listing .job_listing-entry-header .job_listing-location {
-    font-size: 100%!important;
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-*/
 
 html
 {
@@ -9471,7 +9261,7 @@ select
     color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: #f5f5f5;
+    background-color: rgba(0, 0, 0, .4);
     background-position: center;
     background-size: cover;
     text-shadow: rgba(0, 0, 0, .8) 0 1px 0;
@@ -9586,22 +9376,165 @@ select
             transform: translateY(-50%);
 }
 
-.job_listing-clickbox,
-.jobify-clickbox,
-.resume-clickbox
-{
+/*
+.job_listing-clickbox, .jobify-clickbox, .resume-clickbox {
+    color: inherit;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-
-    display: block;
-
     width: 100%;
     height: 100%;
+    display: block;
+}
+*/
 
-    color: inherit;
+.job_listing
+{
+    position: relative;
+
+    margin: 0;
+    padding: 1em;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.job_listing:first-child
+{
+    border-top: 1px solid #ccc;
+}
+
+.job_listing:last-child
+{
+    margin-bottom: 3em;
+}
+
+.job_listing a
+{
+    display: block;
+}
+
+.job_listing a:hover
+{
+    text-decoration: none;
+}
+
+.job_listing .job_listing-logo
+{
+    display: inline-block;
+
+    width: 5%;
+}
+
+.job_listing .job_listing-about
+{
+    display: inline-block;
+
+    width: 92%;
+    margin-left: 2%;
+}
+
+.job_listing .job_listing__column
+{
+    display: inline-block;
+
+    margin-right: 3%;
+    margin-bottom: 0;
+
+    vertical-align: middle;
+}
+
+.job_listing .job_listing__column.job_listing-position
+{
+    width: 45%;
+}
+
+.job_listing .job_listing__column.job_listing-position .job_listing-title
+{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+
+    color: #647585;
+}
+
+.job_listing .job_listing__column.job_listing-position .job_listing-company
+{
+    font-size: 14px;
+}
+
+.job_listing .job_listing__column.job_listing-location
+{
+    width: 25%;
+}
+
+.job_listing .job_listing__column.job_listing-meta
+{
+    width: 22%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.job_listing .job_listing__column:last-child
+{
+    margin-right: 0;
+}
+
+.single-job_listing .main-content-inner
+{
+    padding-top: 40px;
+}
+
+.single_job_listing .page-header
+{
+    overflow: hidden;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(204, 204, 204, .41);
+    background: #fafafa;
+}
+
+.single_job_listing .page-header .page-title
+{
+    font-size: 34px;
+    line-height: 1.3;
+
+    margin: 25px 0;
+}
+
+.single_job_listing .page-header .page-subtitle ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.single_job_listing .page-header .page-subtitle ul li
+{
+    display: inline-block;
+
+    padding: 0 20px;
+
+    color: #596b77;
+    border-right: 1px solid #ccc;
+}
+
+.single_job_listing .page-header .page-subtitle ul li.job-type
+{
+    display: inline-block;
+
+    padding: 3px 10px;
+
+    border-right: 0;
 }
 
 header.site-header

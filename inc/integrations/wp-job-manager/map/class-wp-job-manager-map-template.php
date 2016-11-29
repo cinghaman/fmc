@@ -405,7 +405,7 @@ class Listify_WP_Job_Manager_Map_Template extends listify_Integration {
 		$try = get_theme_mod( 'listings-' . $tax . '-' . $term->term_id . '-icon' );
 
         // @since Listify 1.3.0
-		if ( ! $try ) {
+	/*	if ( ! $try ) {
 			// clean up slug
 			add_filter( 'sanitize_key', array( 'Listify_Customizer_Utils', 'remove_dashes_from_keys' ) );
 
@@ -415,6 +415,7 @@ class Listify_WP_Job_Manager_Map_Template extends listify_Integration {
 
 			$try = get_theme_mod( 'listings-' . $tax . '-' . $term->slug . '-icon' );
 		}
+		*/
 
 		// @since Listify 1.0.0
         if ( ! $try ) {

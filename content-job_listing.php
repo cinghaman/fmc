@@ -1,45 +1,26 @@
-<?php
-/**
- * The template for displaying job listings (in a loop).
- *
- * @package Listify
- */
-?>
-
-<li itemscope itemtype="http://schema.org/LocalBusiness" id="job_listing-<?php the_ID(); ?>" <?php echo apply_filters( 'listify_job_listing_data', '', false ); ?>>
-
-	<div class="content-box">
-
-		<?php do_action( 'listify_content_job_listing_before' ); ?>
-
-		<a href="<?php the_permalink(); ?>" class="job_listing-clickbox" <?php if ( listify_theme_mod( 'listing-archive-window', false ) && ! is_front_page() ) : ?>target="_blank"<?php endif; ?>></a>
-
-		<header <?php echo apply_filters( 'listify_cover', 'job_listing-entry-header listing-cover' ); ?>>
-            <?php do_action( 'listify_content_job_listing_header_before' ); ?>
-
-			<div class="job_listing-entry-header-wrapper cover-wrapper">
-				<?php do_action( 'listify_content_job_listing_header_start' ); ?>
-
-				<div class="job_listing-entry-thumbnail">
-					<div <?php echo apply_filters( 'listify_cover', 'list-cover' ); ?>></div>
+<?php global $post; ?>
+<li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_lat ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_long ); ?>">
+	<a href="<?php the_job_permalink(); ?>" class="job_listing-clickbox">
+		<div class="job_listing-logo">
+			<?php the_company_logo(); ?>
+		</div>
+		<div class="job_listing-about">
+			<div class="job_listing-position job_listing__column">
+				<h3 class="job_listing-title"><?php the_title(); ?></h3>
+				<div class="job_listing-company">
+					<?php the_company_name( '<strong>', '</strong> ' ); ?>
+					<?php the_company_tagline( '<span class="tagline">', '</span>' ); ?>
 				</div>
-				<div class="job_listing-entry-meta">
-					<?php do_action( 'listify_content_job_listing_meta' ); ?>
-				</div>
-
-				<?php do_action( 'listify_content_job_listing_header_end' ); ?>
+			</div> <!-- position -->
+			<div class="job_listing-location job_listing__column">
+				<?php the_job_location( false ); ?>
 			</div>
-
-            <?php do_action( 'listify_content_job_listing_header_after' ); ?>
-		</header><!-- .entry-header -->
-
-		<footer class="job_listing-entry-footer">
-
-			<?php do_action( 'listify_content_job_listing_footer' ); ?>
-
-		</footer><!-- .entry-footer -->
-
-		<?php do_action( 'listify_content_job_listing_after' ); ?>
-
-	</div>
-</li><!-- #post-## -->
+			<ul class="job_listing-meta job_listing__column">
+				<?php do_action( 'job_listing_meta_start' ); ?>
+				<li class="job-type <?php echo get_the_job_type() ? sanitize_title( get_the_job_type()->slug ) : ''; ?>"><?php the_job_type(); ?></li>
+				<li class="date"><date><?php printf( __( '%s ago', 'wp-job-manager' ), human_time_diff( get_post_time( 'U' ), current_time( 'timestamp' ) ) ); ?></date></li>
+				<?php do_action( 'job_listing_meta_end' ); ?>
+			</ul>
+		</div> <!-- job listing about -->
+	</a>
+</li>
